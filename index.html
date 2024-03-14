@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Learning Platform</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>E-Learning Platform</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="explore">
+      <div>
+        <img src="e learning logo.png" alt="logo" width="200" height="200" />
+      </div>
+    </section>
+
+    <div class="slider">
+      <cdiv class="slides">
+        <div class="slide">
+          <img src="elearning 2.jpg" alt="Image 1" class="img" />
+        </div>
+        <div class="slide">
+          <img src="elearning 3.jpg" alt="Image 2" class="img" />
+        </div>
+        <div class="slide">
+          <img src="elearning 4.jpg" alt="Image 3" class="img" />
+        </div>
+      </cdiv>
+      <div class="prev" onclick="changeSlide(-1)">❮</div>
+      <div class="next" onclick="changeSlide(1)">❯</div>
+    </div>
+
+    <div class="explore">
+      <h1>Welcome to Our E-Learning Platform</h1>
+      <p>Empowering you to learn anytime, anywhere.</p>
+      <a href="courses.html" class="btn">Explore Courses</a>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <section class="benefits-section">
+      <h2>Why You Choose Us</h2>
+      <div class="benefit">
+        <img src="flexible learning.jpg" alt="Logo 1" />
+        <p>Flexible Learning Schedule</p>
+      </div>
+      <div class="benefit">
+        <img src="diversity.jpg" alt="Logo 2" />
+        <p>Access to Diverse Courses</p>
+      </div>
+      <div class="benefit">
+        <img src="cost time.jpg" alt="Logo 3" />
+        <p>Cost-Effective Learning</p>
+      </div>
+    </section>
+
+    <section
+      class="background-section"
+      style="background-image: url('elearning.jpg')"
+    >
+      <div class="content-section">
+        <h2>Join Thousands of Learners</h2>
+        <p>
+          Discover why thousands of people have already enrolled in our courses
+          and started their learning journey with us.
+        </p>
+
+        <div class="enrollment-stats">
+          <div class="stat">
+            <span class="count">10,000+</span>
+            <span class="label">Enrolled Learners</span>
+          </div>
+          <div class="stat">
+            <span class="count">5,000+</span>
+            <span class="label">Courses Purchased</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="background-section"
+      style="background-image: url('background.jpg')"
+    >
+      <div class="content-section">
+        <h2>Enroll in Our Courses</h2>
+        <p>
+          Take the next step in your learning journey. Explore our courses and
+          enroll today!
+        </p>
+        <div class="enrollment-form">
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Your Full Name"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+
+          <label for="course">Select Course:</label>
+          <select id="course" name="course">
+            <option value="web-development">Web Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="graphic-design">Graphic Design</option>
+          </select>
+
+          <button class="btn enroll-btn">Enroll Now</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 E-Learning Platform. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex].style.display = "block";
+    }
+
+    function changeSlide(n) {
+      slideIndex += n;
+      showSlides();
+    }
+  </script>
+</html>

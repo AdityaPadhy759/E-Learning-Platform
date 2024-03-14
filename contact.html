@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-section {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        box-sizing: border-box;
+      }
+
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      .contact-form button {
+        display: inline-block;
+        background-color: #fff;
+        color: #3498db;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #2980b9;
+        color: #fff;
+      }
+    </style>
+    <title>Contact Us - E-Learning Platform</title>
+  </head>
+  <body>
+    <header>
+      <h1>E-Learning Platform</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 E-Learning Platform. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

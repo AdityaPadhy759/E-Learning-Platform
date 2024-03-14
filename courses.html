@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .course-overview {
+        padding: 20px;
+      }
+
+      .image-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .image-tab {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+
+      .image-tab img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .image-tab p {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Course!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="overview">
+      <h2>Course Overview</h2>
+      <div class="image-tabs">
+        <div class="image-tab">
+          <img src="app development.jpg" alt="Image 1" />
+          <p>
+            Tap into the vast Android user base with custom Android apps
+            optimized for performance and scalability.
+          </p>
+        </div>
+        <div class="image-tab">
+          <img src="web development.jpg" alt="Image 2" />
+          <p>
+            From static websites to dynamic web applications, we design and
+            develop custom solutions that align with your business objectives
+            and exceed your expectations.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="syllabus">
+      <h2>Course Syllabus</h2>
+      <div class="image-row">
+        <div class="image-box">
+          <img src="java.jpg" alt="Image 1" />
+          <p>JAVA</p>
+        </div>
+        <div class="image-box">
+          <img src="python-logo.png" alt="Image 2" />
+          <p>PYTHON</p>
+        </div>
+        <div class="image-box">
+          <img src="web development.jpg" alt="Image 3" />
+          <p>Web Development</p>
+        </div>
+        <div class="image-box">
+          <img src="javascript-logo-big.png" alt="Image 4" />
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-enrollment">
+      <div class="content-section">
+        <h2>Enrollment</h2>
+        <p>
+          Ready to enhance your skills? Enroll in the Web Development course now
+          and start your learning journey with us.
+        </p>
+        <button class="btn enroll-btn">Enroll Now</button>
+      </div>
+    </section>
+
+    <section class="course-testimonials">
+      <div class="content-section">
+        <h2>What Our Students Say</h2>
+        <blockquote>
+          "The Web Development course provided by E-Learning Platform has been a
+          game-changer for me. The hands-on projects and expert guidance have
+          significantly improved my coding skills."
+        </blockquote>
+        <p>- John Doe, Web Development Student</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Course Web Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
